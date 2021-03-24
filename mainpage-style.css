@@ -1,0 +1,669 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  background-image: url("Images/photo-1507842217343-583bb7270b66.jfif");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFEBCD;
+  scroll-behavior: smooth;
+}
+
+::placeholder {
+  color: #FFEBCD;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #8B4513;
+  clip-path: polygon(0 0, 100% 0, 100% 29%, 0 100%, 0 0);
+}
+
+.main-nav {
+  border-bottom: none;
+  width: 100%;
+  height: 45px;
+  background-color: #8B4513;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1em;
+  position: sticky;
+  position: -webkit- sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.main-nav ul {
+  margin: 0;
+}
+
+.main-nav li {
+  padding-top: 0;
+  display: inline;
+  float: right;
+}
+
+.main-nav a {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0.4em;
+  margin-right: 0.4em;
+}
+
+.specialbutton {
+  padding: 0.4em 0.6em 0.4em 0.9em;
+  background-color: #8B4513;
+  color: white;
+  border-radius: 0.8em;
+  transition: 0.6s;
+}
+
+.specialbutton:hover {
+  background-color: #DEB887;
+  color: #8B4513;
+}
+
+.normalbutton {
+  padding: 0.4em 0.6em 0.4em 0.6em;
+  color: white;
+  transition: 0.4s;
+}
+
+.normalbutton:hover {
+  color: black;
+}
+
+.brand-name {
+  font-family: 'Gorditas', cursive;
+  margin: 0;
+  color: white;
+  font-size: 2em;
+  padding: 0.3em 0.5em 0.5em 0.1em;
+}
+
+.top-brand-name {
+  vertical-align: middle;
+  width: 50%;
+  font-size: 8em;
+  cursor: default;
+  transform: rotateZ(-6deg);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  margin-right: 3.5em;
+  margin-top: 15px;
+}
+
+.image {
+  width: 45%;
+}
+
+.text {
+  width: 55%;
+}
+
+.home-image {
+  border-radius: 10px;
+  width: 100%;
+  height: 90%;
+  animation: fadeinfromabove 1s ease-in-out forwards;
+  z-index: -1;
+}
+
+@keyframes fadeinfromabove {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinfromleft {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeinfromright {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.home-image-title {
+  margin-top: 45%;
+  font-size: 50px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: #8B4513;
+  font-weight: bold;
+  cursor: default;
+}
+
+.home-image-desc {
+  margin-top: 0.8em;
+  opacity: 0;
+  font-weight: lighter;
+  transform: translateX(-20%);
+  font-size: 20px;
+  transition: 1s;
+}
+
+.home-image-title:hover .home-image-desc {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.container2 {
+  width: 900px;
+  height: 500px;
+  margin: 60px auto;
+  padding: 10em 1.5em;
+  background-color: #FFEBCD;
+  position: relative;
+  display: flex;
+}
+
+.container2 .clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.container2 .clip.clip1 {
+  background: url("Images/Pictureaboutus.png");
+  background-size: cover;
+  clip-path: polygon(0 0, 65% 0, 27% 100%, 0% 100%);
+}
+
+.container2 .clip.clip2 {
+  background: url("Images/Picturewhatwedo.png");
+  background-size: cover;
+  clip-path: polygon(65% 0, 100% 0, 61% 100%, 27% 100%);
+}
+
+.container2 .clip.clip3 {
+  background: url("Images/Picturecontacts.png");
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 61% 100%);
+}
+
+.container2:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.container2 .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.container {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+  max-width: 900px;
+  max-height: 500px;
+}
+
+.breaker {
+  margin-top: 152px;
+}
+
+.breaker2 {
+  margin-top: 185px;
+}
+
+.about-content {
+  text-align: left;
+  width: 45%;
+  height: 100px;
+  background-color: #DEB887;
+}
+
+.about-header-title {
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  color: #8B4513;
+  font-size: 5em;
+  padding-bottom: 10px;
+  padding-top: 60px;
+}
+
+.reading-icon {
+  margin-left: 15px;
+  height: 18%;
+  width: 18%;
+}
+
+.about-title {
+  font-family: 'Gorditas', cursive;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #8B4513;
+  margin-left: 0.7em;
+  padding-top: 0.7em;
+}
+
+.about-desc {
+  margin-left: 0.8em;
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #8B4513;
+}
+
+.slideshow-container {
+  max-width: 900px;
+  height: 405px;
+  position: relative;
+  margin: 60px auto 0px auto;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 400px;
+  position: absolute;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.caption-text {
+  font-family: 'Inter', sans-serif;
+  color: #8B4513;
+  background-color: white;
+  font-size: 15px;
+  position: absolute;
+  margin-left: 25%;
+  width: 50%;
+  text-align: center;
+  padding-top: 10px;
+  bottom: 5px;
+  height: 40px;
+  user-select: none;
+}
+
+.arr-header-title {
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  color: #8B4513;
+  font-size: 5em;
+  padding-bottom: 10px;
+  padding-top: 45px;
+}
+
+.arr-button {
+  color: black;
+  margin-top: 25%;
+  position: absolute;
+  font-size: 1.5em;
+  background-color: #FFEBCD;
+  opacity: 0.8;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  width: 25px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.right-button {
+  right: 0;
+}
+
+.arr-button:hover {
+  background-color: rgba(255, 206, 133, 0.8);
+}
+
+.dotlist {
+  text-align: center;
+  transform: translateX(-1%);
+}
+
+.dotlist ul {
+  margin: 0;
+}
+
+.dotlist li {
+  padding-top: 0;
+  display: inline;
+}
+
+.dotlist a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 0.4em;
+  margin-right: 0.4em;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(139, 69, 19, 0.6);
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: rgba(139, 69, 19, 1);
+}
+
+.slideanim {
+  animation: fade 0.6s ease forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.form-text {
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  text-align: justify;
+  color: #8B4513;
+  font-size: 5em;
+  padding-bottom: 10px;
+  width: 30%;
+}
+
+.signup-text {
+  width: 70%;
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  color: #8B4513;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.signup-title {
+  font-size: 1.4em;
+}
+
+.form-input-text {
+  font-size: 0.7em;
+}
+
+.input-text {
+  font-family: 'Inter', sans-serif;
+  margin-left: 5px;
+  background-color: rgba(139, 69, 19, 0.6);
+  color: #FFEBCD;
+  padding-left: 2px;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  outline: none;
+}
+
+.email-input {
+  margin-left: 30px;
+  background-color: rgba(139, 69, 19, 0.6);
+  color: #FFEBCD;
+  padding-left: 2px;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  outline: none;
+}
+
+.signup-container {
+  width: 100%;
+  height: 300px;
+  background-color: #DEB887;
+  border: 2px solid #8B4513;
+  border-radius: 5px;
+}
+
+.signup-form {
+  height: 215px;
+  position: relative;
+}
+
+.cow-icon {
+  display: block;
+  margin-left: 25%;
+  margin-top: 15%;
+  height: 30%;
+  width: 55%;
+}
+
+.signup-button {
+  position: absolute;
+  font-family: 'Gorditas', cursive;
+  font-size: 1.2em;
+  border: none;
+  color: #8B4513;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  bottom: 8px;
+  left: 25px;
+  outline: none;
+}
+
+.signup-button:hover {
+  background-color: rgba(139, 69, 19, 0.7);
+  color: rgba(255, 178, 122, 0.7);
+}
+
+.login-link {
+  position: absolute;
+  margin-left: 19px;
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #8B4513;
+  bottom: 8px;
+  right: 25px;
+}
+
+.login-link:hover {
+  color: rgba(139, 69, 19, 0.6);
+}
+
+.signup-header-title {
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  color: #8B4513;
+  font-size: 5em;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+.main-footer {
+  background-color: #8B4513;
+  color: white;
+  padding: 0.25em 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.main-footer img {
+  margin-top: 15px;
+  height: 25px;
+  width: 25px;
+}
+
+.footer-container {
+  width: 100%;
+  height: 5.5vh;
+  background-color: #8B4513;
+  padding: 0.25em 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-container ul {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.footer-container li {
+  display: inline;
+  padding: 0 .5em;
+}
+
+.footer-container a {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 12px;
+}
+
+.bottom-brand-name {
+  font-size: 1.7em;
+  padding: 0.6em 0em 0.4em 0.4em;
+  width: 50%;
+  font-family: 'Gorditas', cursive;
+  color: white;
+  top: 50%;
+  cursor: default;
+}
+
+.formmargin {
+  margin-top: 14%;
+}
+
+.loginpage-container {
+  margin: 5.5% auto;
+  max-width: 1000px;
+  background-color: rgba(255, 235, 205, 0.6);
+  padding-bottom: 1%;
+  border-radius: 6px;
+}
+
+.loginpage-content {
+  padding-left: 3%;
+}
+
+.loginpage-form-container {
+  width: 100%;
+  height: auto;
+  background-color: #DEB887;
+  border: 2px solid #8B4513;
+  border-radius: 5px;
+}
+
+.logintext {
+  width: 70%;
+}
+
+.welcomebacktext {
+  width: 30%;
+  user-select: none;
+}
+
+.login-text {
+  width: 70%;
+  font-family: 'Gorditas', cursive;
+  text-align: center;
+  color: #8B4513;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.login-title {
+  padding-top: 14px;
+  font-size: 1.5em;
+}
+
+.loginform-input-text {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+  outline: none;
+}
+
+.login-button {
+  font-family: 'Gorditas', cursive;
+  font-size: 1.2em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 0.3s;
+  vertical-align: middle;
+  text-align: center;
+  padding-bottom: 4px;
+  color: #8B4513;
+  outline: none;
+}
+
+.login-button:hover {
+  background-color: rgba(139, 69, 19, 0.7);
+  color: rgba(255, 178, 122, 0.7);
+}
+
+.forgotpassword {
+  font-size: 0.6em;
+  color: rgba(69, 89, 130, 1);
+}
+
+.forgotpassword:hover {
+  color: rgba(69, 89, 130, 0.7);
+}
+
+.backbutton img {
+  position: fixed;
+  margin-left: 18%;
+  margin-top: 4%;
+  height: 50px;
+  width: 50px;
+}
+
+.left-arrow {
+  display: inline-block;
+}
+
+.left-arrow-colored {
+  display: none;
+}
+
+.backbutton:hover .left-arrow-colored {
+  display: inline;
+}

@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFEBCD;
+}
+
+::placeholder {
+  color: #FFEBCD;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.column-left {
+  display: flex;
+  flex: 1;
+}
+
+.left-image {
+  background-image: url("Images/Armaghs_Robinson_Library.jfif");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+}
+
+.column-right {
+  display: flex;
+  flex: 1.5;
+}
+
+.title-text {
+  font-family: 'Gorditas', cursive;
+  color: #8B4513;
+  align-self: center;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+.form-container {
+  margin: 20vh auto;
+  height: 60vh;
+  width: 50%;
+  background: rgba(139, 69, 19, 0.3);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #8B4513;
+  position: relative;
+}
+
+.form-container ul {
+  margin: 0;
+}
+
+.form-container li {
+  list-style: none;
+  align-self: center;
+}
+
+.updatelabel {
+  color: #8B4513;
+  font-weight: 500;
+  margin-top: 50px;
+  font-size: 23px;
+}
+
+.updateinput {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 3px;
+  height: 30px;
+  width: 250px;
+  border: none;
+  color: #8B4513;
+  font-weight: 400;
+  outline: none;
+  padding-left: 6px;
+}
+
+.updatebutton {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #8B4513;
+  border-radius: 3px;
+  width: 80px;
+  height: 38px;
+  color: #8B4513;
+  font-size: 16px;
+  background: transparent;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.2s;
+  cursor: pointer;
+  position: absolute;
+  bottom: 8px;
+  outline: none;
+}
+
+.updatebutton:hover {
+  background-color: rgba(139, 69, 19, 0.8);
+  color: #E5BDA0;
+}
+
+.skipbutton {
+  position: absolute;
+  bottom: 8px;
+  right: 13vh;
+  text-decoration: none;
+  color: #8B4513;
+}
+
+.skipbutton:hover {
+  color: rgba(139, 69, 19, 0.4);
+}

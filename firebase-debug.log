@@ -1,0 +1,25 @@
+[debug] [2021-03-24T03:09:12.037Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T03:09:12.038Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Forge-15 i7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-24T03:09:12.039Z] CLI Version:   9.6.1
+[debug] [2021-03-24T03:09:12.039Z] Platform:      win32
+[debug] [2021-03-24T03:09:12.039Z] Node Version:  v14.16.0
+[debug] [2021-03-24T03:09:12.040Z] Time:          Wed Mar 24 2021 11:09:12 GMT+0800 (Malaysia Time)
+[debug] [2021-03-24T03:09:12.040Z] ----------------------------------------------------------------------
+[debug] [2021-03-24T03:09:12.040Z] 
+[debug] [2021-03-24T03:09:12.045Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-24T03:09:12.045Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Program Files (x86)\EasyPHP-Devserver-17\eds-www\BookooWebsite
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+

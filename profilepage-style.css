@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFEBCD;
+}
+
+.title-container-profile {
+  font-family: 'Gorditas', cursive;
+  font-size: 50px;
+  color: #8B4513;
+  width: 70%;
+  height: 10vh;
+  margin: 5vh auto 2vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.container3 {
+  width: 70%;
+  background: rgba(255, 228, 196, 1);
+  border-radius: 4px;
+  height: 70vh;
+  margin: 0vh auto 5vh auto;
+  position: relative;
+}
+
+.row3 {
+  display: flex;
+}
+
+.column3 {
+  display: flex;
+}
+
+.picture-column {
+  flex: 1;
+  justify-content: center;
+}
+
+.img-container {
+  margin: 8px auto;
+  height: 25vh;
+  width: 60%;
+  border: 3px solid #8B4513;
+  border-radius: 6px;
+}
+
+.img-container img {
+  width: 100%;
+  padding: 5px 5px 0px 5px;
+}
+
+.details-column {
+  flex: 2;
+  padding: 6px 3px 6px 12px;
+  border: 2px solid #8B4513;
+  height: 70vh;
+  border-radius: 6px;
+  justify-content: flex-start;
+}
+
+.details-column li {
+  font-family: 'Poppins', sans-serif;
+  color: #60300E;
+  list-style: none;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.details-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.details-content {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.updateprofile-button {
+  font-family: 'Poppins', sans-serif;
+  color: #60300E;
+  margin-top: 20px;
+  border: none;
+  width: 180px;
+  height: 32px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #60300E;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.updateprofile-button a {
+  text-decoration: none;
+  color: #FFEBCD;
+}
+
+.updateprofile-button:hover {
+  background: rgba(96, 48, 14, 0.6);
+}
+
+.backbutton2 img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 50px;
+}
+
+.left-arrow2 {
+  display: inline-block;
+}
+
+.left-arrow-colored2 {
+  display: none;
+}
+
+.backbutton2:hover .left-arrow-colored2 {
+  display: inline;
+}
